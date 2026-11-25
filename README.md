@@ -2,7 +2,7 @@
 
 Aplicação de lista de tarefas (to-do list) feita com HTML, CSS e JavaScript puro (sem frameworks), com persistência de dados no navegador.
 
-**Demo ao vivo:** _(em breve — link do GitHub Pages)_
+**Demo ao vivo:** https://takkedaz.github.io/lista-de-tarefas/
 
 ## Funcionalidades
 
