@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #1a1a2e, #16213e);
+  display: flex;
+  justify-content: center;
+  padding: 60px 16px;
+  min-height: 100vh;
+}
+
+.container {
+  background: #242442;
+  width: 420px;
+  max-width: 100%;
+  padding: 24px;
+  border-radius: 14px;
+  color: white;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 22px;
+}
+
+.input-area {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 18px;
+}
+
+#input-tarefa {
+  flex: 1;
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  font-size: 14px;
+}
+
+#btn-adicionar {
+  padding: 10px 16px;
+  background: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.15s;
+}
+
+#btn-adicionar:hover {
+  background: #43a047;
+}
+
+.barra-status {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 14px;
+  font-size: 13px;
+  color: #a0a0c0;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.filtros {
+  display: flex;
+  gap: 6px;
+}
+
+.filtro {
+  background: none;
+  border: 1px solid #3f3f66;
+  color: #a0a0c0;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.filtro:hover {
+  border-color: #5a5a8a;
+}
+
+.filtro.ativo {
+  background: #4caf50;
+  border-color: #4caf50;
+  color: white;
+}
+
+#lista-tarefas {
+  list-style: none;
+}
+
+#lista-tarefas li {
+  background: #2f2f52;
+  padding: 10px 12px;
+  margin-bottom: 8px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#lista-tarefas li.concluida span {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+#lista-tarefas li .acoes button {
+  background: none;
+  border: none;
+  color: #ff6b6b;
+  cursor: pointer;
+  font-size: 16px;
+  margin-left: 8px;
+}
+
+#lista-tarefas li span {
+  cursor: pointer;
+  flex: 1;
+}
+
+.input-edicao {
+  flex: 1;
+  padding: 6px 8px;
+  border-radius: 6px;
+  border: none;
+  font-size: 14px;
+}
+
+.vazio {
+  text-align: center;
+  color: #6f6f99;
+  font-size: 13px;
+  padding: 20px 0;
+}
